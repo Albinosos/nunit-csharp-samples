@@ -21,7 +21,7 @@ public class LibraryManager : ILibraryManager
     public void AddBook(Book book)
     {
         // Перевірка на наявність книги в колекції
-        if (!IsBookInLibrary(book))
+        if (!IsArticleInLibrary(book.Articul))
         {
             // Додавання книги до колекції
             _books.Add(book);
@@ -29,19 +29,16 @@ public class LibraryManager : ILibraryManager
         }
         else
         {
-            Console.WriteLine($"Книга \"{book.Title}\" вже існує в бібліотеці.");
+            Console.WriteLine($"Книга з артикулом \"{book.Articul}\" вже існує в бібліотеці.");
         }
     }
 
-    /// <summary>
-    /// Checks if the book is already in the library's collection.
-    /// </summary>
-    /// <param name="book">The book to check.</param>
-    /// <returns>True if the book is in the collection, false otherwise.</returns>
-    private bool IsBookInLibrary(Book book)
+
+    private bool IsArticleInLibrary(string article)
     {
-        return _books.Contains(book);
+        return _books.Any(book => book.Articul == article);
     }
+
 
 
     /// <summary>
@@ -50,16 +47,19 @@ public class LibraryManager : ILibraryManager
     /// <param name="book">The book to remove.</param>
     public void RemoveBook(Book book)
     {
-        // Перевірка на наявність книги в колекції
-        if (library.Contains(book))
+        if (_books.Contains(book))
         {
-            // Видалення книги з колекції
-            library.Remove(book);
+            _books.Remove(book);
             Console.WriteLine($"Книга \"{book.Title}\" успішно видалена з бібліотеки.");
         }
         else
         {
             Console.WriteLine($"Книга \"{book.Title}\" не знайдена в бібліотеці.");
         }
+    }
+
+    public List<Book> GetBooks()
+    {
+        return _books;
     }
 }
