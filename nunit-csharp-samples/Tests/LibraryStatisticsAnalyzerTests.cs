@@ -1,6 +1,27 @@
-namespace nunit_csharp_samples.Tests;
+using NUnit.Framework;
 
-public class LibraryStatisticsAnalyzerTests
+namespace nunit_csharp_samples.Tests
 {
-    // TODO step 4.
+    public class LibraryStatisticsAnalyzerTests
+    {
+        // TODO step 4.
+
+        [Test]
+        public void TestGetBooksByAuthor()
+        {
+            // Arrange
+            var libraryManager = new LibraryManager();
+            var analyzer = new LibraryStatisticsAnalyzer(libraryManager);
+            var author = "Author1";
+            var expectedBook = new Book { Title = "Book1", Author = author, Articul = "123" };
+
+            // Act
+            libraryManager.AddBook(expectedBook);
+            var result = analyzer.GetBooksByAuthor(author);
+
+            // Assert
+            Assert.That(result.Count, Is.EqualTo(1));
+            Assert.That(result[0], Is.EqualTo(expectedBook));
+        }
+    }
 }

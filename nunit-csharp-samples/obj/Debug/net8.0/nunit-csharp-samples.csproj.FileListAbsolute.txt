@@ -10,3 +10,16 @@
 /Users/vanyachernov/Desktop/nunit-csharp-samples/nunit-csharp-samples/obj/Debug/net8.0/refint/nunit-csharp-samples.dll
 /Users/vanyachernov/Desktop/nunit-csharp-samples/nunit-csharp-samples/obj/Debug/net8.0/nunit-csharp-samples.pdb
 /Users/vanyachernov/Desktop/nunit-csharp-samples/nunit-csharp-samples/obj/Debug/net8.0/ref/nunit-csharp-samples.dll
+E:\github\nunit-csharp-samples\nunit-csharp-samples\bin\Debug\net8.0\nunit-csharp-samples.deps.json
+E:\github\nunit-csharp-samples\nunit-csharp-samples\bin\Debug\net8.0\nunit-csharp-samples.dll
+E:\github\nunit-csharp-samples\nunit-csharp-samples\bin\Debug\net8.0\nunit-csharp-samples.pdb
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\nunit-csharp-samples.csproj.AssemblyReference.cache
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\nunit-csharp-samples.GeneratedMSBuildEditorConfig.editorconfig
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\nunit-csharp-samples.AssemblyInfoInputs.cache
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\nunit-csharp-samples.AssemblyInfo.cs
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\nunit-csharp-samples.csproj.CoreCompileInputs.cache
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\nunit-csharp-samples.sourcelink.json
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\nunit-csharp-samples.dll
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\refint\nunit-csharp-samples.dll
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\nunit-csharp-samples.pdb
+E:\github\nunit-csharp-samples\nunit-csharp-samples\obj\Debug\net8.0\ref\nunit-csharp-samples.dll

@@ -62,4 +62,10 @@ public class LibraryManager : ILibraryManager
     {
         return _books;
     }
+
+    // Метод для тестування
+    public int GetBooksCount()
+    {
+        return _books.Count;
+    }
 }
