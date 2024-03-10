@@ -14,4 +14,6 @@ public interface ILibraryManager
     /// </summary>
     /// <param name="book">The book to remove.</param>
     void RemoveBook(Book book);
+
+    List<Book> GetBooks();
 }
