@@ -36,4 +36,10 @@ public class LibraryStatisticsAnalyzer
     {
         return _manager.GetBooks().FirstOrDefault(book => book.Articul == articul);
     }
+
+    // Метод для тестування
+    public int GetTotalBooksCount()
+    {
+        return _manager.GetBooksCount();
+    }
 }
