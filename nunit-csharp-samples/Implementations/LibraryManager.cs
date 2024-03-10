@@ -11,8 +11,17 @@ public class LibraryManager : ILibraryManager
     /// <param name="book">The book to add.</param>
     public void AddBook(Book book)
     {
-        // TODO step 1.
-        // TODO step 2.
+        // Перевірка на наявність книги в колекції
+        if (!library.Contains(book))
+        {
+            // Додавання книги до колекції
+            library.Add(book);
+            Console.WriteLine($"Книга \"{book.Title}\" успішно додана до бібліотеки.");
+        }
+        else
+        {
+            Console.WriteLine($"Книга \"{book.Title}\" вже існує в бібліотеці.");
+        }
     }
 
     /// <summary>
@@ -21,6 +30,16 @@ public class LibraryManager : ILibraryManager
     /// <param name="book">The book to remove.</param>
     public void RemoveBook(Book book)
     {
-        // TODO step 1.
+        // Перевірка на наявність книги в колекції
+        if (library.Contains(book))
+        {
+            // Видалення книги з колекції
+            library.Remove(book);
+            Console.WriteLine($"Книга \"{book.Title}\" успішно видалена з бібліотеки.");
+        }
+        else
+        {
+            Console.WriteLine($"Книга \"{book.Title}\" не знайдена в бібліотеці.");
+        }
     }
 }
